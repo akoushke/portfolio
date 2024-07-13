@@ -1,0 +1,3 @@
+# Overview
+
+Demonstrated leadership by spearheading the development of numerous integrations with third-party applications, such as ServiceNow, Azure, Cisco Meraki, Salesforce, and SAP, effectively enhancing user experience across a diverse range of over 100 use cases. Seized a significant opportunity to influence key clients at Cisco, leading them to adopt the Webex programmable ecosystem and driving innovation through the successful implementation of custom integrations. Additionally, took charge of designing and implementing innovative UI solutions, showcasing a proactive approach to optimizing the overall user experience

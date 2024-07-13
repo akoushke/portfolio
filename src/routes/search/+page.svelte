@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { base } from '$app/paths';
 	import { SEARCH } from '$lib/params';
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import MY_EXPERIENCES from '$lib/experiences.params';
@@ -81,7 +80,7 @@
 			{:else}
 				<div class="flex flex-row flex-wrap gap-1">
 					{#each result as item}
-						<Chip href={`${base}/${item.to}`} classes="flex flex-row items-center gap-2">
+						<Chip href={`${item.to}`} classes="flex flex-row items-center gap-2">
 							<UIcon icon={item.icon} />
 							<span>{item.name}</span>
 						</Chip>

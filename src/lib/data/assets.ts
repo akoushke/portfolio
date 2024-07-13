@@ -11,7 +11,10 @@ const Assets = {
 	AWS: a('aws.svg'),
 	Bootstrap: a('bootstrap.svg'),
 	C: a('c.svg'),
+	CalPoly: a('calpoly.png'),
+	CircleCI: a('circleci.svg'),
 	Cpp: a('cpp.svg'),
+	Cisco: a('cisco.png'),
 	Celery: a('celery.svg'),
 	Django: a('django.svg'),
 	FastApi: a('fastapi'),
@@ -24,10 +27,11 @@ const Assets = {
 	Pandas: a('pandas.svg'),
 	RabbitMQ: a('rabbitmq.svg'),
 	Rust: a('rust.svg', 'rust-dark.png'),
+	Redux: a('redux.svg'),
 	Scrapy: a('scrapy.png'),
 	Selenium: a('selenium.svg'),
 	Docker: a('docker.svg'),
-	Kubernetes: a('kubernetees.svg'),
+	Kubernetes: a('kubernetes.png'),
 	Csharp: a('csharp.svg'),
 	Xamarin: a('xamarin.svg'),
 	TypeScript: a('ts.png'),
@@ -70,7 +74,12 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Rollup: a('rollup.svg'),
+	Postcss: a('postcss.svg'),
+	Webpack: a('webpack.png'),
+	Webex: a('webex.png'),
+	Office: a('office.svg'),
+	WebexDev: a('webex-dev.svg')
 };
 
 export default Assets;

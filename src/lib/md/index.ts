@@ -1,0 +1,5 @@
+import * as SKILLS_DESCRIPTIONS from './skills';
+import * as PROJECTS_DESCRIPTIONS from './projects';
+import * as EXPERIENCE_DESCRIPTIONS from './experiences';
+
+export  {SKILLS_DESCRIPTIONS, PROJECTS_DESCRIPTIONS, EXPERIENCE_DESCRIPTIONS};

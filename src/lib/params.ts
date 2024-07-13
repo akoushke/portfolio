@@ -14,7 +14,7 @@ import {
 } from './types';
 import { Icons } from './utils';
 
-export const TITLE_SUFFIX = 'Slick template with Svelte';
+export const TITLE_SUFFIX = 'Arash.K Portfolio';
 
 export const NavBar = {
 	home: 'Home',
@@ -46,35 +46,33 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 
 export const HOME: HomePageParams = {
 	title: 'Home',
-	name: 'Name',
-	lastName: 'LASTNAME',
+	name: 'Arash',
+	lastName: 'K. Baghi',
 	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+		`Experienced full-stack developer with expertise in scalable web apps, specializing in ReactJs, Svelte, and Node.js with keen interest in DevOps engineering. 
+		Led key projects for Cisco's major products such as Webex Browser client and SDK. 
+		Outside of work, I enjoy nature, fitness and riding a motorcycle!`,
 	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
+		{ platform: Platform.GitHub, link: 'https://github.com/akoushke' },
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
+			link: 'https://www.linkedin.com/in/akoushke'
 		},
 		{
 			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
+			link: 'https://twitter.com/akoushke'
 		},
 		{
 			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
+			link: 'arash.koush@gmail.com'
 		},
 		{
 			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
+			link: 'https://www.youtube.com/@arashkoushkebaghi1432/'
 		},
 		{
 			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
+			link: 'https://www.facebook.com/akoushke/'
 		}
 	]
 };
@@ -96,7 +94,7 @@ export const SKILLS: SkillsPageParams = {
 
 export const RESUME: ResumePageParams = {
 	title: 'Resumé',
-	item: ''
+	item: '/resume.pdf'
 };
 
 export const SEARCH: SearchPageParams = {

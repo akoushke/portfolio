@@ -9,7 +9,7 @@
 	import CardLogo from '../Card/CardLogo.svelte';
 	import type { Project } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
-	import { base } from '$app/paths';
+
 
 	export let project: Project;
 	$: months = countMonths(project.period.from, project.period.to);
@@ -24,7 +24,7 @@
 		: 'now';
 </script>
 
-<Card color={project.color} href={`${base}/projects/${project.slug}`}>
+<Card color={project.color} href={`projects/${project.slug}`}>
 	<CardLogo alt={project.name} src={getAssetURL(project.logo)} size={40} radius={'0'} />
 	<div class="m-t-20px row justify-between items-center">
 		<CardTitle title={project.name} />
@@ -60,7 +60,7 @@
 			<ChipIcon
 				logo={getAssetURL(tech.logo)}
 				name={tech.name}
-				href={`${base}/skills/${tech.slug}`}
+				href={`/skills/${tech.slug}`}
 			/>
 		{/each}
 	</div>

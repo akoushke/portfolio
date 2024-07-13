@@ -6,7 +6,6 @@
 	import CardTitle from '../Card/CardTitle.svelte';
 	import ChipIcon from '../Chip/ChipIcon.svelte';
 	import { getAssetURL } from '$lib/data/assets';
-	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 
 	export let experience: Experience;
@@ -26,7 +25,7 @@
 <Card
 	margin="0px 0px 20px 0px"
 	tiltDegree={2}
-	href={`${base}/experience/${experience.slug}`}
+	href={`experience/${experience.slug}`}
 	color={experience.color}
 >
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
@@ -49,13 +48,13 @@
 				</ChipIcon>
 			</div>
 			<div class="text-[var(--accent-text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.description}</div>
+			<div class="experience-description">{experience.shortDescription}</div>
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
 					<ChipIcon
 						logo={getAssetURL(skill.logo)}
 						name={skill.name}
-						href={`${base}/skills/${skill.slug}`}
+						href={`skills/${skill.slug}`}
 					/>
 				{/each}
 			</div>

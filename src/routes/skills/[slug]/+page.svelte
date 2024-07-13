@@ -5,7 +5,6 @@
 	import MY_EXPERIENCES from '$lib/experiences.params';
 	import MY_PROJECTS from '$lib/projects.params';
 
-	import { base } from '$app/paths';
 	import type { Skill } from '$lib/types';
 	import { getAssetURL } from '$lib/data/assets';
 	import { SKILLS } from '$lib/params';
@@ -100,7 +99,7 @@
 					{#each related as item}
 						<Chip
 							classes="inline-flex flex-row items-center justify-center"
-							href={`${base}${item.url}`}
+							href={`${item.url}`}
 						>
 							<CardLogo src={item.img} alt={item.name} radius={'0px'} size={15} classes="mr-2" />
 							<span class="text-[0.9em]">{item.display}</span>

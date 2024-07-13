@@ -4,7 +4,7 @@
 	import Input from './Input/Input.svelte';
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
-	import { base } from '$app/paths';
+
 
 	export let title = 'Title';
 	export let search = '';
@@ -32,7 +32,7 @@
 
 			window.history.replaceState(state, '', url);
 			
-			if ($page.url.pathname.startsWith(`${base}/search`)) {
+			if ($page.url.pathname.startsWith(`search`)) {
 				if (searchInput) {
 					searchInput.focus();
 				}

@@ -9,7 +9,7 @@
 <CommonPage {title}>
 	<div class="resume">
 		{#if item}
-			<a href={item}>
+			<a href={item} download>
 				<Chip size={'1.25em'}>Download</Chip>
 			</a>
 		{:else}

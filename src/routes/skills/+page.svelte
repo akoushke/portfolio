@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Card from '$lib/components/Card/Card.svelte';
-	import { base } from '$app/paths';
 	import { SKILLS } from '$lib/params';
 	import SearchPage from '$lib/components/SearchPage.svelte';
 	import type { Skill } from '$lib/types';
@@ -35,7 +34,7 @@
 				<Card
 					classes={['cursor-pointer decoration-none']}
 					tiltDegree={1}
-					href={`${base}/skills/${skill.slug}`}
+					href={`skills/${skill.slug}`}
 					bgImg={getAssetURL(skill.logo)}
 					color={skill.color}
 				>

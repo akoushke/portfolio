@@ -18,7 +18,7 @@ Svelte is :
 
 ## Example
 
-```ts
+```typescript
 <script>
     let count = 1;
     $: doubled = count * 2;
