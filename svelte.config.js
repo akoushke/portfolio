@@ -1,6 +1,8 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
+import ROUTES from './routes.js';
+const base = '/portfolio';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -14,12 +16,18 @@ const config = {
 	},
 
 	kit: {
-		adapter: adapter({
-			// default options are shown
-			out: 'build',
-			precompress: false,
-			envPrefix: ''
-		})
+		adapter: adapter({ fallback: '404.html' }),
+		alias: {
+			$lib: './src/lib',
+			'@data': './src/lib/data',
+			'@components': './src/lib/components',
+			'@md': './src/lib/md',
+			'@stores': './src/lib/stores',
+			'@utils': './src/lib/utils'
+		},
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? base : ''
+		}
 	}
 };
 
